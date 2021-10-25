@@ -6,7 +6,7 @@ export const Footer = () => (
         <Container>
         <Navbar.Collapse className="justify-content-center">
         <Navbar.Text>
-            by <a href="https://github.com/0x6D-developerBYmik34">mihayil</a>
+            by <a href="https://github.com/0x6D-developerBYmik34">mihayil</a>, 2021.
         </Navbar.Text>
         </Navbar.Collapse>
         </Container>

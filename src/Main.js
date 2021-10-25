@@ -2,14 +2,13 @@ import Accordion from 'react-bootstrap/Accordion'
 import { BeautyBar } from './BeautyBar'
 import { DeviceInfo } from './DeviceInfo'
 import { Footer } from './Footer'
-import Container from 'react-bootstrap/Container'
 
 export const TheMain = () => {
 
 
-    return <Container className="justify-content-center" fluid>
+    return <>
         <header>
-            <BeautyBar />
+            <BeautyBar>НАШ ГОРОД</BeautyBar>
         </header>
         <main>
             <Accordion defaultActiveKey="0" className="justify-content-md-center">
@@ -24,5 +23,5 @@ export const TheMain = () => {
         <footer>
             <Footer />
         </footer>
-    </Container>;
+    </>;
 };
