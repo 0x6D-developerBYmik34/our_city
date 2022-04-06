@@ -29,7 +29,7 @@ export const DeviceInfoRealTest = () => {
         client.current.connect({
             onSuccess: onConnect, 
             onFailure: onFail,
-            reconnect: true,
+            // reconnect: true,
             useSSL: true,
             userName: 'u_ZIfPUk',
             password: '0nuKchYJ'
@@ -57,9 +57,9 @@ export const DeviceInfoRealTest = () => {
         function onMessageArrived(message) {
             console.log("onMessageArrived:" + message.payloadString);
             const data_splitable = message.payloadString.split('|');
-            setTemp(data_splitable[0] + ' °C');
-            setHum(data_splitable[1] + ' %');
-            setPress(data_splitable[2] + ' Па');
+            setTemp(data_splitable[0] + '°C');
+            setHum(data_splitable[1] + '%');
+            setPress(data_splitable[2] + 'Па');
         }
     }, []);
 
